@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="menu" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mvc.menu.controller.MenuController">
+   <children>
+      <HBox spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#showArtist" text="Artist" />
+            <Button mnemonicParsing="false" onAction="#showAlbum" text="Album" />
+            <Button mnemonicParsing="false" onAction="#showSong" text="Song" />
+            <Button mnemonicParsing="false" onAction="#showGenre" text="Genre" />
+            <Button mnemonicParsing="false" onAction="#showMusician" text="Musician" />
+            <Button mnemonicParsing="false" onAction="#showArtistOverview" text="All Artists" />
+            <Button mnemonicParsing="false" onAction="#showAlbumOverview" text="All Albums" />
+            <Button mnemonicParsing="false" onAction="#showSongOverview" text="All Songs" />
+            <Button mnemonicParsing="false" onAction="#showGenreOverview" text="All Genres" />
+            <Button mnemonicParsing="false" onAction="#showMusicianOverview" text="All Musicios" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

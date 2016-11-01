@@ -1,0 +1,21 @@
+/* Стили для TableView с активными строками */
+
+.table-row-cell:filled:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #ccffcc;
+}
+
+.table-view .column-header {
+    -fx-cursor: hand;
+}
+
+
+/* Styles for TreeView */
+
+.tree-cell:filled:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #ccffcc;
+}
+.tree-cell .tree-disclosure-node {
+    -fx-cursor: default;
+}

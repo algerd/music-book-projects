@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="690.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mvc.musician.controller.MusicianDialogController">
+   <children>
+      <GridPane AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="150.0" prefWidth="150.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="300.0" prefWidth="300.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="235.0" prefHeight="235.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Name" />
+            <Label text="Type" GridPane.rowIndex="1" />
+            <Label text="Date Of Birth" GridPane.rowIndex="2" />
+            <Label text="Date Of Death" GridPane.rowIndex="3" />
+            <Label text="Country" GridPane.rowIndex="4" />
+            <Label text="Rating" GridPane.rowIndex="5" />
+            <TextField fx:id="nameTextField" GridPane.columnIndex="1" />
+            <ChoiceBox fx:id="typeChoiceBox" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <DatePicker fx:id="dobDatePicker" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <DatePicker fx:id="dodDatePicker" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="countryTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Spinner fx:id="ratingSpinner" maxWidth="60.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />           
+            <Label text="Comment" GridPane.rowIndex="6" />
+            <TextArea fx:id="commentTextArea" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextFlow prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Drag and drop an image, an image file, or an image URL or paste below." />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="60.0" />
+               </padding>
+            </TextFlow>
+            <!-- -->          
+            <fx:include fx:id="includedDialogImageBox" source="/helper/inputImageBox/DialogImageBox.fxml" GridPane.columnIndex="1" GridPane.rowIndex="7" />          
+            <!-- -->
+         </children>
+      </GridPane>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#handleOkButton" text="OK" />
+            <Button mnemonicParsing="false" onAction="#handleCancelButton" text="Cancel" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

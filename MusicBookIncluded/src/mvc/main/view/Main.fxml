@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mvc.main.controller.MainController">
+   <stylesheets>
+       <URL value="@/mvc/main/view/main.css" />
+   </stylesheets>
+   <top>
+      <fx:include fx:id="includedMenu" source="../../menu/view/Menu.fxml" />
+   </top>
+   <center>      
+        <SplitPane dividerPositions="0.3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+           <items>
+              <fx:include fx:id="includedExplorer" source="../../explorer/view/Explorer.fxml" />          
+              <AnchorPane>
+                 <children>
+                    <fx:include fx:id="includedArtistPane" source="../../artist/view/ArtistPane.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />     
+                    <fx:include fx:id="includedAlbumPane" source="../../album/view/AlbumPane.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />     
+                    <fx:include fx:id="includedSongPane" source="../../song/view/SongPane.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />     
+                    <fx:include fx:id="includedGenrePane" source="../../genre/view/GenrePane.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />     
+                    <fx:include fx:id="includedArtistOverview" source="../../artist/view/ArtistOverview.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />     
+                    <fx:include fx:id="includedAlbumOverview" source="../../album/view/AlbumOverview.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />     
+                    <fx:include fx:id="includedSongOverview" source="../../song/view/SongOverview.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />     
+                    <fx:include fx:id="includedGenreOverview" source="../../genre/view/GenreOverview.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />     
+                    <fx:include fx:id="includedMusicianPane" source="../../musician/view/MusicianPane.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />   
+                    <fx:include fx:id="includedMusicianOverview" source="../../musician/view/MusicianOverview.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />        
+                 </children>
+              </AnchorPane>    
+           </items>
+        </SplitPane>     
+   </center>
+</BorderPane>
