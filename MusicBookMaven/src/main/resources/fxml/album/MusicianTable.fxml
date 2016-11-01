@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="musicianTable" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="com.algerd.musicbookspringmaven.controller.album.MusicianTableController">
+   <children>
+      <TableView fx:id="musicianTableView" onMouseClicked="#onMouseClickTable" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="musicianColumn" minWidth="100.0" prefWidth="150.0" text="Musician" />
+          <TableColumn fx:id="instrumentColumn" minWidth="100.0" prefWidth="150.0" text="Instruments" />
+          <TableColumn fx:id="ratingColumn" maxWidth="500.0" minWidth="50.0" prefWidth="50.0" text="Rating" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
